@@ -17,8 +17,7 @@ public class USMoney {
             }
             this.cents = c;
             this.dollars = d + aux;
-        }
-        
+        } 
     }
 
     public USMoney plus(USMoney obj){
@@ -28,7 +27,11 @@ public class USMoney {
     }
 
     public String getAll(){
-        return "$ "+this.dollars+"."+this.cents;
+        if(this.cents <= 9){
+            return "$"+this.dollars+".0"+this.cents;
+        }else{
+            return "$"+this.dollars+"."+this.cents;
+        }
     }
 
 }

@@ -30,6 +30,12 @@ public class Main {
         z = x.plus(y);
         System.out.println(z.getAll());
 
+        // Caso de teste 05
+        x = new USMoney(0, 9);
+        y = new USMoney(0, 0);
+        z = x.plus(y);
+        System.out.println(z.getAll());
+
     }
 
 }
